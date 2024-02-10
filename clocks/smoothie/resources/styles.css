@@ -1,0 +1,84 @@
+#bg {
+	fill: black;
+}
+
+.tickQuart {
+	x1: 0;
+	y1: -51%;
+	x2: 0;
+	y2: -51%+8;
+	stroke-linecap: round;
+	stroke-width: 2;
+	fill: #F44336;
+}
+
+.tickFive {
+	x1: 0;
+	y1: -56%;
+	x2: 0;
+	y2: -56%+8;
+	stroke-linecap: round;
+	stroke-width: 2;
+	fill: #F44336;
+}
+
+.number {
+	x: 0;
+	y: 9;
+	font-size: 24;
+	text-anchor: middle;
+	fill: #CFD8DC;
+}
+
+.timeTxt {
+	text-anchor: middle;
+	text-length: 8;
+	fill: #78909C;
+	font-size: 26;
+}
+
+.dateTxt {
+	text-anchor: middle;
+	text-length: 16;
+	fill: #78909C;
+	font-size: 26;
+}
+
+.statIcon {
+	fill: #7E57C2;
+	opacity: 0.4;
+}
+
+.statTxt {
+	text-anchor: middle;
+	fill: #78909C;
+	font-size: 20;
+	text-length: 8;
+}
+
+#sign {
+	text-anchor: middle;
+	fill: #78909C;
+	font-size: 20;
+	text-length: 32;
+}
+
+.hourLine {
+	stroke-width: 5;
+	fill: #CFD8DC;
+}
+
+.minLine {
+	stroke-width: 4;
+	fill: #B0BEC5;
+}
+
+.secLine {
+	stroke-width: 1;
+	stroke-linecap: round;
+	fill: #FFEBEE;
+}
+
+#center {
+	fill: #F44336;
+}

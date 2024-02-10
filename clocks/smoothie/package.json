@@ -1,0 +1,32 @@
+{
+  "name": "smoothie",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "02b69bd4-2942-4b4b-9ba8-c94ba2f27571",
+    "appType": "clockface",
+    "appDisplayName": "Smoothie",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#000000",
+    "requestedPermissions": [
+      "access_activity",
+      "access_user_profile",
+      "access_heart_rate",
+      "access_location"
+    ],
+    "buildTargets": [
+      "vulcan"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}

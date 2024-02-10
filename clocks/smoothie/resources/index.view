@@ -1,0 +1,90 @@
+<svg>
+	<defs>
+		<link rel="stylesheet" href="styles.css" />
+		<symbol id="ticksQuart">
+			<g transform="rotate(0)"><line class="tickQuart"/></g>
+			<g transform="rotate(90)"><line class="tickQuart"/></g>
+			<g transform="rotate(180)"><line class="tickQuart"/></g>
+			<g transform="rotate(270)"><line class="tickQuart"/></g>
+		</symbol>
+		<symbol id="ticksFive">
+			<g transform="rotate(30)"><line class="tickFive"/></g>
+			<g transform="rotate(60)"><line class="tickFive"/></g>
+			<g transform="rotate(120)"><line class="tickFive"/></g>
+			<g transform="rotate(150)"><line class="tickFive"/></g>
+			<g transform="rotate(210)"><line class="tickFive"/></g>
+			<g transform="rotate(240)"><line class="tickFive"/></g>
+			<g transform="rotate(300)"><line class="tickFive"/></g>
+			<g transform="rotate(330)"><line class="tickFive"/></g>
+		</symbol>
+		<symbol id="numbers">
+			<g transform="translate(26%,-43%)"><text class="number">1</text></g>
+			<g transform="translate(44%,-27%)"><text class="number">2</text></g>
+			<g transform="translate(45%,0%)"><text class="number">3</text></g>
+			<g transform="translate(44%,27%)"><text class="number">4</text></g>
+			<g transform="translate(26%,43%)"><text class="number">5</text></g>
+			<g transform="translate(0%,44%)"><text class="number">6</text></g>
+			<g transform="translate(-26%,43%)"><text class="number">7</text></g>
+			<g transform="translate(-44%,27%)"><text class="number">8</text></g>
+			<g transform="translate(-45%,0%)"><text class="number">9</text></g>
+			<g transform="translate(-44%,-27%)"><text class="number">10</text></g>
+			<g transform="translate(-26%,-43%)"><text class="number">11</text></g>
+			<g transform="translate(0%,-45%)"><text class="number">12</text></g>
+		</symbol>
+	</defs>
+
+	<rect id="bg" x="0" y="0" width="100%" height="100%" />
+	<g id="dial" transform="translate(50%,50%)">
+		<use href="#ticksQuart" />
+		<use href="#ticksFive" />
+		<use href="#numbers" />
+		<g id="now" transform="translate(0,-78%)">
+			<text id="time" class="timeTxt" x="0">10:00 AM</text>
+		</g>
+		<g id="today" transform="translate(0,-61%)">
+			<text id="date" class="dateTxt" x="0">1</text>
+		</g>
+		<g id="statsTop" transform="translate(0,-30%)">
+			<g id="statBat">
+				<image class="statIcon" width="23" height="14" x="-102" y="0" href="battery.png" />
+				<text class="statTxt" id="bat" x="-88" y="34">100%</text>
+			</g>
+			<g id="statHeart">
+				<image class="statIcon" width="21" height="19" x="80" y="-4" href="heart.png" />
+				<text class="statTxt" id="heart" x="91" y="34">62</text>
+			</g>
+		</g>
+		<g id="statsBtm" transform="translate(0,6%)">
+			<g id="statDist">
+				<image class="statIcon" width="26" height="26" x="-104" y="0" href="distance.png" />
+				<text class="statTxt" id="distance" x="-90" y="44">0</text>
+			</g>
+			<g id="statSteps">
+				<image class="statIcon" width="26" height="26" x="-13" y="42" href="steps.png" />
+				<text class="statTxt" id="steps" x="0" y="86">0</text>
+			</g>
+			<g id="statCal">
+				<image class="statIcon" width="26" height="26" x="74" y="0" href="calories.png" />
+				<text class="statTxt" id="calories" x="90" y="44">0</text>
+			</g>
+		</g>
+		<g transform="translate(0,10%)">
+			<text id="sign" x="0" y="0">Smoothie</text>
+		</g>
+	</g>
+	<g id="hands" transform="translate(50%,50%)">
+		<g id="hourHand"><line x1="0" y1="0" x2="0" y2="-25%" class="hourLine" /></g>
+		<g id="minHand"><line x1="0" y1="0" x2="0" y2="-35%" class="minLine"/></g>
+		<g id="secondHand">
+			<line x1="0"  y1="0%"   x2="0"  y2="-38%" class="secLine"/>
+
+			<line x1="0" y1="0%" x2="1" y2="5%" class="secLine"/>
+			<line x1="0" y1="0%" x2="-1" y2="5%" class="secLine"/>
+			<line x1="1" y1="5%" x2="-1" y2="5%" class="secLine"/>
+			<line x1="0" y1="0%" x2="0" y2="5%" class="secLine"/>
+		</g>
+		<circle id="center" cx="0" cy="0" r="6" />
+	</g>
+
+	<rect id="tap" width="100%" height="100%" opacity="0" pointer-events="all"/>
+</svg>
